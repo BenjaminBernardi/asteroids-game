@@ -12,8 +12,8 @@ class CircleShape(pygame.sprite.Sprite):
         self.radius = radius
 
     def draw(self, screen):
-        pygame.draw.polygon(screen, "white", self.triangle(), width=2)
-        pygame.draw.circle(screen, "red", self.position, self.radius, width=1)
+        pygame.draw.polygon(screen, "yellow", self.triangle(), width=2)
+        # pygame.draw.circle(screen, "red", self.position, self.radius, width=1)
 
     def update(self, dt):
         pass
