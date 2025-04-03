@@ -37,6 +37,12 @@ def main():
                 import sys
                 sys.exit()
 
+        for asteroid in asteroids:
+            for bullet in shots:
+                if bullet.check_collisions(asteroid):
+                    bullet.kill()
+                    asteroid.split()
+
         for item in drawable:
             item.draw(screen)
         
